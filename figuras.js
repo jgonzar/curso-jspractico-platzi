@@ -1,10 +1,10 @@
 // Cálculos del cuadrado
 console.group("Cuadrado");
     function perimetroCuadrado(lado){
-        return console.log("El perímetro del cuadrado es: " + parseFloat((lado * 4).toFixed(2)) + " cm");
+        return parseFloat((lado * 4).toFixed(2));
         }  
     function areaCuadrado (lado){
-       return console.log("El área del cuadrado es: " + parseFloat((lado * lado).toFixed(2)) + " cm^2");
+       return parseFloat((lado * lado).toFixed(2));
     }
 console.groupEnd();
 
@@ -38,3 +38,18 @@ console.group("Círculo");
         return console.log("El área del círculo es: " + parseFloat(((radio * radio) * pi).toFixed(2)) + " cm^2"); 
     } 
 console.groupEnd();
+
+// Interacción con HTML 
+function calcularPerimetroCuadrado(){
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+    const perimetro = perimetroCuadrado(value);
+    alert(("El perímetro del cuadrado es: " + perimetro + " cm"));
+}
+
+function calcularAreaCuadrado(){
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+    const area = areaCuadrado(value);
+    alert("El área del cuadrado es: " + area + " cm^2");
+}
