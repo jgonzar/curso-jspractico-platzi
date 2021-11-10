@@ -1,0 +1,162 @@
+/* Globals */
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    html{
+        font-size:62.5%;
+        font-family: 'Montserrat', sans-serif;
+    }
+    body{
+        width: 100%;
+        height:auto;
+        color:#FFF;
+        background:linear-gradient(to left bottom,#02F0E7,#7502F0);
+        background-repeat: no-repeat;
+    }
+
+/* Header */
+    header{
+        width: 90%;
+        margin:0 auto;
+        text-align: center;
+    }
+    header h1{
+        font-size:2.4rem;
+        font-weight:500;
+        padding:15px 0;
+    }
+    header p{
+        font-size:1.2rem;
+        font-weight:300;
+        padding: 0 0 5px;
+    }
+    .fa-shapes{
+        font-size: 4.2rem;
+        margin-top: 15px;
+    }
+/* Main section */
+    main{
+        width:70%;
+        height:auto;
+        margin:30px auto;
+        line-height:1.3;
+    }
+    section{
+        text-align: center;
+        margin:0 0 40px;
+    }
+    section h2{
+        font-size:1.6rem;
+        font-weight:500;
+        margin-bottom: 10px;
+    }
+    label{
+        font-size:1.2rem;
+        font-weight:500;
+    }
+    form p{
+        font-size:1.2rem;
+        font-weight:300;
+        margin-top: 15px;;
+        color: rgba(255, 255, 255, 0.747);
+    }
+    section input{
+        border-radius:10px;
+    }
+    .input-container{
+        margin:15px 0;
+    }
+    input{
+        color:#FFF;
+        border:1px solid rgba(255, 255, 255, 0.699);
+        background-color:transparent;
+        padding:1px;
+    }
+    .btn-container{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:10px;
+        margin:5px 0;
+    }
+    .cuadrados button{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.2rem;
+        padding:5px;
+        border:1px solid transparent;
+        border-radius:20px;
+        color:#FFF;
+        background-color:#02f0e869; 
+        transition:.6s;
+    }
+    .cuadrados button:hover{
+        cursor: pointer;
+        color:#000;
+        background-color:#FFF;
+    }
+    .triangulos button{
+        padding:5px;
+        border:1px solid transparent;
+        border-radius:20px;
+        color:#FFF;
+        background-color:#02f0e883; 
+        transition:.6s;
+    }
+    .triangulos button:hover{
+        cursor: pointer;
+        color:#000;
+        background-color:#FFF;
+    }
+    .circulos button{
+        padding:5px;
+        border:1px solid transparent;
+        border-radius:20px;
+        color:#FFF;
+        background-color:#7502f0b7; 
+        transition:.6s;
+    }
+    .circulos button:hover{
+        cursor: pointer;
+        color:#000;
+        background-color:#FFF;
+    }
+    /* Cards styles */
+    .cuadrados{
+        border-radius:10px;
+        background-color:#7502F0;
+        padding:10px;
+    }
+    .fa-square{
+        font-size: 2.2rem;
+        margin-bottom:5px;
+    }
+    .triangulos{
+        border-radius:10px;
+        background-color:#230CF7;
+        padding:10px;
+    }
+    .fa-play{
+        font-size:2.2rem;
+        margin-bottom:5px;
+        transform:rotate(31deg);
+    }
+    .circulos{
+        border-radius:10px;
+        background-color:#05ddd6;
+        padding:10px;
+    }
+    .fa-circle{
+        font-size:2.2rem;
+        margin-bottom:5px;
+    }
+    
+/* Footer */
+    footer{
+        width:70%;
+        text-align: center;
+        font-size:1.2rem;
+        font-weight:300;
+        margin: 0 auto;
+        padding:15px 0 30px;
+    }
