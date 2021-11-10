@@ -47,7 +47,7 @@ function calcularPerimetroCuadrado(){
     const input = document.getElementById("inputCuadrado");
     const value = input.value;
     const perimetro = perimetroCuadrado(value);
-    document.getElementById("answer-output").innerHTML = "Perímetro: " + perimetro + " cm"
+    document.getElementById("answer-square").innerHTML = "Perímetro: " + perimetro + " cm";
 }
 
 
@@ -55,7 +55,7 @@ function calcularAreaCuadrado(){
     const input = document.getElementById("inputCuadrado");
     const value = input.value;
     const area = areaCuadrado(value);
-    alert("El área del cuadrado es: " + area + " cm^2");
+    document.getElementById("answer-square").innerHTML = "Área: " + area + " cm^2";
 }
 
 // Funciones del triángulo
@@ -67,7 +67,7 @@ function calcularPerimetroTriangulo(){
     const lado2 = parseInt(inputLado2.value);
     const base = parseInt(inputBase.value);
     const perimetro = perimetroTriangulo(lado1,lado2,base);
-    alert(("El perímetro del triángulo es: " + perimetro + " cm"));
+    document.getElementById("answer-triangle").innerHTML = "Perímetro: " + perimetro + " cm";
 }
 
 function calcularAreaTriangulo(){
@@ -76,7 +76,7 @@ function calcularAreaTriangulo(){
     const base = parseInt(inputBase.value);
     const altura =parseInt(inputAltura.value);
     const area = areaTriangulo(base, altura);
-    alert("El área del triángulo es: " + area + " cm^2");
+    document.getElementById("answer-triangle").innerHTML = "Área: " + area + " cm^2";
 }
 
 // Funciones del Círculo
@@ -84,12 +84,12 @@ function calcularCircunferenciaCirculo(){
     const input = document.getElementById("inputCirculo");
     const value = input.value;
     const circunferencia = circunferenciaCirculo(value);
-    alert(("La circunferencia del círculo es: " + circunferencia + " cm"));
+    document.getElementById("answer-circle").innerHTML = "Circunferencia: " + circunferencia + " cm";
 }
 
 function calcularAreaCirculo(){
     const input = document.getElementById("inputCirculo");
     const value = input.value;
     const area = areaCirculo(value);
-    alert("El área del círculo es: " + area + " cm^2");
+    document.getElementById("answer-circle").innerHTML = "Área: " + area + " cm^2";
 }
