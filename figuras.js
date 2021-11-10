@@ -26,18 +26,18 @@
         // const radioCirculo = 4;
     // Diámetro
     function diametroCirculo(radio){
-        return console.log("El diámetro del círculo es: " + parseFloat((radio * 2).toFixed(2)) + " cm")
+        return parseFloat((radio * 2).toFixed(2));
     }    
     // Pi
         const pi = Math.PI;
     // Circunferencia
     function circunferenciaCirculo (radio){
         const diametro = diametroCirculo(radio);
-        return  console.log("La circunferencia del círculo es: " + parseFloat((diametro * pi).toFixed(2)) + " cm");
+        return parseFloat((diametro * pi).toFixed(2));
     }
     // Área 
     function areaCirculo(radio){
-        return console.log("El área del círculo es: " + parseFloat(((radio * radio) * pi).toFixed(2)) + " cm^2"); 
+        return parseFloat(((radio * radio) * pi).toFixed(2)); 
     } 
 
 
@@ -79,3 +79,16 @@ function calcularAreaTriangulo(){
 }
 
 // Funciones del Círculo
+function calcularCircunferenciaCirculo(){
+    const input = document.getElementById("inputCirculo");
+    const value = input.value;
+    const circunferencia = circunferenciaCirculo(value);
+    alert(("La circunferencia del círculo es: " + circunferencia + " cm"));
+}
+
+function calcularAreaCirculo(){
+    const input = document.getElementById("inputCirculo");
+    const value = input.value;
+    const area = areaCirculo(value);
+    alert("El área del círculo es: " + area + " cm^2");
+}
