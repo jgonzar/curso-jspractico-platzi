@@ -9,4 +9,4 @@ Este es mi repositorio para las asignaciones del curso de javascript practico de
         - Definir las formulas
         - Implementar formulas en Javascript
         - Crear funciones
-        - Intefrar Javascript con HTML
+        - Integrar Javascript con HTML
